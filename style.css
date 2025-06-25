@@ -1,0 +1,73 @@
+/* Full-page background with animated gradient */
+body {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    background: linear-gradient(-45deg, #ff9a9e, #fad0c4, #fbc2eb, #a6c1ee);
+    background-size: 400% 400%;
+    animation: gradientBG 15s ease infinite;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Animation keyframes for background */
+@keyframes gradientBG {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+/* Centered form container */
+form {
+    background: rgba(255, 255, 255, 0.95);
+    padding: 40px 45px;
+    border-radius: 18px;
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.3);
+    width: 90%;
+    max-width: 420px;
+    text-align: center;
+}
+
+/* Form heading */
+h2 {
+    margin-bottom: 20px;
+    font-size: 26px;
+    color: #333;
+}
+
+/* Input styles */
+input[type="text"],
+input[type="password"],
+input[type="file"],
+input[type="submit"] {
+    width: 100%;
+    padding: 14px;
+    margin: 12px 0;
+    border: none;
+    border-radius: 10px;
+    font-size: 16px;
+    box-sizing: border-box;
+    transition: all 0.3s ease;
+}
+
+/* Submit button */
+input[type="submit"] {
+    background-color: #6c5ce7;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+input[type="submit"]:hover {
+    background-color: #4834d4;
+    transform: scale(1.05);
+}
